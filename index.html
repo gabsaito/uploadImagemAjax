@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Upload de imagem AJAX</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-form">
+        <img src="img/img_sample.jpg" alt="sample" class="imagem-uploaded">
+        <div class="container-progress-bar">
+            <span class="progress-bar"></span>
+            <span class="display-percent">
+                <p class="container-percent"><span>0</span>%</p>
+            </span>
+        </div>
+        <form action="php/upload.php" enctype="multipart/form-data" method="post" id="formUpload">
+            <label class="inputFileFake" for="image">
+                <span class="tooltype">Alterar foto</span>
+            </label>
+            <input type="file" name="image" id="image" class="inputFile">
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+<script type="text/javascript" src="js/uploadImagem.js"></script>
+</html>
